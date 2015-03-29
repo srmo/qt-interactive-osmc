@@ -24,7 +24,7 @@
     //
     //
     // classe che crea e controlla la tastiera:
-    class widgetKeyBoard : public QWidget {
+    class QTINTERACTIVEOSMCSHARED_EXPORT widgetKeyBoard : public QWidget {
         Q_OBJECT
 
         public:

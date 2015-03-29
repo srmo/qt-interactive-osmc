@@ -43,7 +43,7 @@ void QKeyPushButton::getKeyPress(bool capsStatus)
         key = new QKeyEvent(QEvent::KeyPress, Qt::Key_Return, Qt::NoModifier);
     else { // trattasi di caratteri stampabili
         keyCode = text.toUtf8()[0]; // prende il valore numerico (sempre maiuscolo)
-        if (capsStatus == false) { // se deve prendere minuscolo, controlla se il carattere è alfabetico
+        if (capsStatus == false) { // se deve prendere minuscolo, controlla se il carattere Ã¨ alfabetico
             if (keyCode >= tr("A")[0] && keyCode <= tr("Z")[0]) {
                 keyCode += 32; // carattere piccolo
                 text = (char ) keyCode; // carattere piccolo
